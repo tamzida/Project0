@@ -241,3 +241,8 @@ li.twitter { background-image:url("images/t1.png"); }
 
 #css3 li:hover { opacity:1; }
 #css3 li:hover a strong { opacity:1; top:40px; }
+.test{
+    margin: 0;
+    padding: 0;
+;
+}
