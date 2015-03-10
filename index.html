@@ -7,13 +7,28 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="animate2.css"/>
     <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <title>Welcome to p1</title>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script>
+        // WOW animation
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 50,
+            mobile: true,
+            live: true
+        });
+        wow.init();
+    </script>
+    <h1><marquee>Srizon Software Ltd.</marquee></h1>
 </head>
 <body>
 <section id="first">
     <div class="container">
-        <div class="logo">
+        <div class="logo wow pulse">
             <img src="images/logo-azad.png"/>
         </div>
         <div class="menu">
@@ -40,7 +55,7 @@
 <section id="third">
     <div class="container">
         <div class="section-top">
-            <h2>What we do?</h2>
+            <h2 class=" wow zoomIn ">What we do?</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, eaque expedita ipsum officiis quis temporibus!</p>
         </div>
         <div class="third-content">
@@ -72,28 +87,29 @@
 <section id="fourth">
     <div class="container">
         <div class="fourth-top">
-            <h2>Our Team</h2>
+            <h2 class="wow fadeInLeft">Our Team</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, optio.</p>
         </div>
-        <div class="fourth">
+        <div class="fourth  wow delay-_2s bounceIn">
             <img src="images/team1.jpg"/>
             <h2>Micheal</h2>
             <p>Web Designer</p>
         </div>
-        <div class="fourth">
+        <div class="fourth delay-_3s wow bounceIn">
             <img src="images/team2.jpg"/>
             <h2>Sofia</h2>
             <p>Web Developer</p>
         </div>
-        <div class="fourth">
+        <div class="fourth delay-_4s wow bounceIn">
             <img src="images/team3.jpg"/>
             <h2>Sarah</h2>
             <p>Web Developer</p>
         </div>
-        <div class="fourth">
+        <div class="fourth delay-_5s wow bounceIn">
             <img src="images/team4.jpg"/>
             <h2>Jonson</h2>
             <p>Graphics Designer</p>
+
         </div>
     </div>
 </section>
@@ -103,23 +119,69 @@
             <div class="row">
                 <div class="col-md-3">
                     <h4>Newsletter</h4>
-                    <p class="pbottom">Keep up on our always evolving product features and technology.
+                    <p>Keep up on our always evolving product features and technology.
                         Enter your e-mail and subscribe to our newsletter.</p>
                     <input type="text" class="form" name="e-mail" placeholder="Email Address">
                     <input type="text" class="button" name="go"  placeholder="Go!">
                 </div>
                 <div class="col-md-3">
                     <h4>Latest Tweets</h4>
-                    <span class="glyphicon glyphicon-twitter"></span>
+                    <p><i class="fa fa-twitter "></i>&nbsp;Lorem ipsum dolor sit amet.</p>
+                    <a href="#">http//:www.a20.com</a>
                 </div>
-                <div class="col-md-4"></div>
-                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p><i class="fa fa-map-marker"></i>&nbsp;Address: Mirpur-11,Dhaka,Bangladesh</p>
+                    <p><i class="fa fa-phone"></i>&nbsp;Phone: (+8800) 01917****43</p>
+                    <p><i class="fa fa-envelope"></i>&nbsp;Email:<a href="#"> mail@ooo.com</a></p>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="wow flash">Follow Us</h4>
+                    <!-- Social Media Buttons - CSS3 -->
+                    <ul class="social" id="css3">
+
+                        <li class="facebook">
+                            <a href="http://www.facebook.com/"><strong>Facebook</strong></a>
+                        </li>
+
+                        <li class="linkedin">
+                            <a href="http://www.linkedin.com/"><strong>LinkedIn</strong></a>
+                        </li>
+
+                        <li class="twitter">
+                            <a href="http://twitter.com/"><strong>Twitter</strong></a>
+                        </li>
+                    </ul>
+                    <!-- /Social Media Buttons - CSS3 -->
+                    <!-- Social Media Buttons - jQuery -->
+
+                    <!-- /Social Media Buttons - jQuery -->
+                </div>
             </div>
         </div>
     </div>
+    <h1><marquee>Srizon Software Ltd.</marquee></h1>
 </section>
 <section id="six">
-    <footer class="footer"><p>@ All Rights Reserved By Md.Azad Hossain</p></footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-7">
+                <p>© Copyright 2015. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-3">
+                <div class="fmenu">
+                    <ul>
+                        <li><a href="#"> FAQ's</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </section>
 </body>
 </html>
