@@ -1,0 +1,18 @@
+create repository on github using website
+===========================
+
+from empty
+1. create a folder
+2. open git bash on that folder
+3. command
+git init
+git remote add origin 'url' ( url can be found in website )
+
+adding new file or editing new file
+1. do it on php storm or any other editor or copy paste from some other folder
+2. add it to git. command
+git add .
+3. commit it to local git
+git commit -m 'message details'
+4. push it to server/github
+git push (for the first time command should be: git push -u origin master)
