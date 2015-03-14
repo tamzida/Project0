@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.png">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="animate2.css"/>
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+    <link rel="stylesheet" href="animate2.css" type="text/css"/>
     <link rel="stylesheet" href="bootstrap.min.css"/>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flickity.css" type="text/css" media="screen"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
     <title>Welcome to p1</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
     <script>
         // WOW animation
         var wow = new WOW({
@@ -23,9 +29,69 @@
         });
         wow.init();
     </script>
-    <h1><marquee>Srizon Software Ltd.</marquee></h1>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#second').parallax("50%", 0.3);
+
+        })
+    </script>
+
+    <style>
+        .gallery-cell {
+            width: 100%;
+
+        }
+
+        .gallery-cell img {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
+
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Page 1-1</a></li>
+                        <li><a href="#">Page 1-2</a></li>
+                        <li><a href="#">Page 1-3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+                <li><a href="#">Page 3</a></li>
+                <li><a href="#">Page 3</a></li>
+                <li><a href="#">Page 3</a></li>
+                <li><a href="#">Page 3</a></li>
+                <li class="search">
+                    <input type="text" class="sear" name="e-mail" placeholder="Search">
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
 <section id="first">
     <div class="container">
         <div class="logo wow pulse">
@@ -41,76 +107,130 @@
                 <li class="search">
                     <input type="text" class="sear" name="e-mail" placeholder="Search">
             </ul>
+
         </div>
     </div>
 </section>
 <section id="second">
-    <div class="container">
-        <div class="content">
-            <h2>Welcome to p1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi blanditiis dignissimos eaque eligendi eos expedita praesentium tempora vel! Maxime, repellat.</p>
+    <div class="parallax-overlay">
+        <div class="container">
+
+            <div class="content">
+                <h2>Welcome to p1</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi blanditiis dignissimos eaque eligendi
+                    eos expedita praesentium tempora vel! Maxime, repellat.</p>
+            </div>
         </div>
     </div>
 </section>
+
+
 <section id="third">
     <div class="container">
-        <div class="section-top">
-            <h2 class=" wow zoomIn ">What we do?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, eaque expedita ipsum officiis quis temporibus!</p>
-        </div>
-        <div class="third-content">
-            <img src="images/webdesign.jpg"/>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-top">
+                    <h2 class=" wow zoomIn ">What we do?</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit, sed diam nonummy nibh
-                euismod tincidunt ut laoreet dolore
-                magna aliquam erat volutpat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, eaque expedita ipsum officiis quis
+                        temporibus!</p>
+                </div>
+            </div>
         </div>
-        <div class="third-content">
-            <img src="images/1.jpg"/>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="third-content">
+                    <img src="images/webdesign.jpg"/>
+                    <p>Lorem ipsum dolor sit amet, consectetuecr
+                        adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore
+                        magna aliquam erat volutpat.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="third-content">
+                    <img src="images/1.jpg"/>
+                    <p>Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore
+                        magna aliquam erat volutpat.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="third-content">
+                    <img src="images/gd.jpg"/>
+                    <p>Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore
+                        magna aliquam erat volutpat.</p>
+                </div>
+            </div>
+        </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit, sed diam nonummy nibh
-                euismod tincidunt ut laoreet dolore
-                magna aliquam erat volutpat.</p>
-        </div>
-        <div class="third-content">
-            <img src="images/gd.jpg"/>
-
-            <p>Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit, sed diam nonummy nibh
-                euismod tincidunt ut laoreet dolore
-                magna aliquam erat volutpat.</p>
-        </div>
     </div>
 </section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="gallery js-flickity"
+                 data-flickity-options='{"prevNextButtons": true, "pageDots": false, "autoPlay": 5000, "wrapAround": true}'>
+                <div class="gallery-cell"><img src="images/slides/_u/1.jpg" alt=""/></div>
+                <div class="gallery-cell"><img src="images/slides/_u/2.jpg" alt=""/></div>
+                <div class="gallery-cell"><img src="images/slides/_u/3.jpg" alt=""/></div>
+                <div class="gallery-cell"><img src="images/slides/_u/4.jpg" alt=""/></div>
+                <div class="gallery-cell"><img src="images/slides/_u/5.jpg" alt=""/></div>
+
+            </div>
+        </div>
+    </div>
+</div>
 <section id="fourth">
     <div class="container">
-        <div class="fourth-top">
-            <h2 class="wow fadeInLeft">Our Team</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, optio.</p>
-        </div>
-        <div class="fourth  wow delay-_2s bounceIn">
-            <img src="images/team1.jpg"/>
-            <h2>Micheal</h2>
-            <p>Web Designer</p>
-        </div>
-        <div class="fourth delay-_3s wow bounceIn">
-            <img src="images/team2.jpg"/>
-            <h2>Sofia</h2>
-            <p>Web Developer</p>
-        </div>
-        <div class="fourth delay-_4s wow bounceIn">
-            <img src="images/team3.jpg"/>
-            <h2>Sarah</h2>
-            <p>Web Developer</p>
-        </div>
-        <div class="fourth delay-_5s wow bounceIn">
-            <img src="images/team4.jpg"/>
-            <h2>Jonson</h2>
-            <p>Graphics Designer</p>
+        <div class="row">
+            <div class="col-md-12"><div class="fourth-top">
+                <h2 class="wow fadeInLeft">Our Team</h2>
 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, optio.</p>
+            </div></div>
         </div>
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6">
+                <div class="fourth  wow delay-_2s bounceIn">
+                    <img src="images/team1.jpg"/>
+
+                    <h2>Micheal</h2>
+
+                    <p>Web Designer</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="fourth delay-_3s wow bounceIn">
+                    <img src="images/team2.jpg"/>
+                    <h2>Sofia</h2>
+                    <p>Web Developer</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="fourth delay-_4s wow bounceIn">
+                    <img src="images/team3.jpg"/>
+                    <h2>Sarah</h2>
+                    <p>Web Developer</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="fourth delay-_5s wow bounceIn ">
+                    <img src="images/team4.jpg" class="mb"/>
+                    <h2>Jonson</h2>
+                    <p>Graphics Designer</p>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
 </section>
 <section id="five">
@@ -119,20 +239,25 @@
             <div class="row">
                 <div class="col-md-3">
                     <h4>Newsletter</h4>
+
                     <p>Keep up on our always evolving product features and technology.
                         Enter your e-mail and subscribe to our newsletter.</p>
                     <input type="text" class="form" name="e-mail" placeholder="Email Address">
-                    <input type="text" class="button" name="go"  placeholder="Go!">
+                    <input type="text" class="button" name="go" placeholder="Go!">
                 </div>
                 <div class="col-md-3">
                     <h4>Latest Tweets</h4>
+
                     <p><i class="fa fa-twitter "></i>&nbsp;Lorem ipsum dolor sit amet.</p>
                     <a href="#">http//:www.a20.com</a>
                 </div>
                 <div class="col-md-4">
                     <h4>Contact Us</h4>
+
                     <p><i class="fa fa-map-marker"></i>&nbsp;Address: Mirpur-11,Dhaka,Bangladesh</p>
+
                     <p><i class="fa fa-phone"></i>&nbsp;Phone: (+8800) 01917****43</p>
+
                     <p><i class="fa fa-envelope"></i>&nbsp;Email:<a href="#"> mail@ooo.com</a></p>
                 </div>
                 <div class="col-md-2">
@@ -160,7 +285,6 @@
             </div>
         </div>
     </div>
-    <h1><marquee>Srizon Software Ltd.</marquee></h1>
 </section>
 <section id="six">
     <div class="container">
